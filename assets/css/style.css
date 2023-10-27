@@ -1,4 +1,6 @@
-
+body {
+    background-color: #E3F4F4;
+}
 #back {
     position: relative;
     width: 100vw;

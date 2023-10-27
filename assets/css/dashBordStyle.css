@@ -1,13 +1,18 @@
-.back {
+/*#dashBack {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url("/assets/images/smartphone-background.jpg")center center;
+    background: url("assets/images/smartphone-background.jpg")center center;
     background-size: cover;
+}*/
+#backImg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
-#logo {
+#dashBord-logo {
     position: absolute;
-    top: 50px;
+    top: 100px;
     left: 500px;
     width: 100px;
     background: white;
@@ -29,7 +34,7 @@
     left: 900px;
     border-color: coral;
 }
-#customerBtn > a > img {
+#customerBtn > img {
     width: 80px;
 }
 #itemBtn {
@@ -37,7 +42,7 @@
     top: 200px;
     left: 900px;
 }
-#itemBtn > a > img {
+#itemBtn > img {
     width: 80px;
 }
 #orderBtn {
@@ -46,24 +51,24 @@
     left: 900px;
     border-color: red;
 }
-#orderBtn > a > img {
+#orderBtn > img {
     width: 80px;
 }
 .firstLabel {
     font-weight: bold;
     font-size: 40px;
-    font-family: "Book Antiqua";
+    font-family: "Book Antiqua", serif;
     position: absolute;
     left: 160px;
 }
 .secondLabel {
     font-size: 15px;
-    font-family: "Lucida Handwriting";
+    font-family: "Lucida Handwriting", serif;
     position: absolute;
     top: 80px;
     left: 200px;
 }
-button {
+#logOutBtn {
     position: absolute;
     top: 600px;
     left: 88vw;

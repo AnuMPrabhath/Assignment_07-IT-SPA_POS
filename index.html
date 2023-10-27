@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
 </head>
 <body>
-<!--<section id="loginSection">
+<section id="loginSection">
     <div id="back">
         <div>
             <h1>Sign In</h1>
@@ -34,37 +34,30 @@
             </div>
         </div>
     </div>
-</section>-->
-<!--<section id="dashboardSection">
-    <div class="back">
-        <img src="/assets/images/mobile-phone-shop-logo.jpg" id="logo">
+</section>
+<section id="dashboardSection">
+    <div id="#dashBack">
+        <img src="assets/images/smartphone-background.jpg" id="backImg">
+        <img src="/assets/images/mobile-phone-shop-logo.jpg" id="dashBord-logo">
         <div id="customerBtn" class="con-div">
-            <a href="customerForm.html">
                 <img src="/assets/images/customer.png" >
                 <label class="firstLabel">Customer</label>
                 <label class="secondLabel">management form here..</label>
-            </a>
         </div>
         <div id="itemBtn" class="con-div">
-            <a href="itemForm.html">
                 <img src="/assets/images/item.png" >
                 <label class="firstLabel">Item</label>
                 <label class="secondLabel">management form here..</label>
-            </a>
         </div>
         <div id="orderBtn" class="con-div">
-            <a href="orderForm.html">
                 <img src="/assets/images/cart.png" >
                 <label class="firstLabel">Order</label>
                 <label class="secondLabel">management form here..</label>
-            </a>
         </div>
-        <a href="../index.html">
-            <button type="button" class="btn btn-danger mb-1">LogOut</button>
-        </a>
+            <button type="button" class="btn btn-danger mb-1" id="logOutBtn">LogOut</button>
     </div>
-</section>-->
-<!--<section id="customerSection">
+</section>
+<section id="navBarSection">
     <header>
         <nav id="nav_bar">
             <div class="container-fluid">
@@ -73,46 +66,47 @@
                     <label id="title">CUSTOMER FORM</label>
                 </a>
                 <ul class="nav nav-tabs">
-                    <li id="aaa" class="nav-item">
-                        <a id="dashboard" class="nav-link" href="dashBord.html">Dashboard</a>
+                    <li id="navDashBord" class="nav-item">
+                        <a id="dashboard" class="nav-link" href="">Dashboard</a>
                     </li>
-                    <li class="nav-item">
-                        <a id="customer" class="nav-link active" href="customerForm.html">Customer</a>
+                    <li class="nav-item" id="navCustomer">
+                        <a id="customer" class="nav-link active" href="">Customer</a>
                     </li>
-                    <li class="nav-item">
-                        <a id="item" class="nav-link" href="itemForm.html">Item</a>
+                    <li class="nav-item" id="navItem">
+                        <a id="item" class="nav-link" href="">Item</a>
                     </li>
-                    <li class="nav-item">
-                        <a id="order" class="nav-link" href="orderForm.html">Order</a>
+                    <li class="nav-item" id="navOrder">
+                        <a id="order" class="nav-link" href="">Order</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-
+</section>
+<section id="customerSection">
     <div class="div-container" id="searchCus">
         <img src="/assets/images/search.png">
         <input type="text" placeholder="Search by customer id..">
     </div>
 
-    <div class="col col-lg-4 col-md-12 col-12 container" id="detailDiv">
+    <div class="col col-lg-4 col-md-12 col-12 container" id="custDetailDiv">
         <form action="" class="row">
             <h3>Customer details</h3>
             <div class="mb-3 col-lg-12 col-md-4">
-                <label for="id" class="form-label">Customer ID</label>
-                <input type="text" class="form-control" id="id" placeholder="C001">
+                <label for="custId" class="form-label">Customer ID</label>
+                <input type="text" class="form-control" id="cust_id" placeholder="C001">
             </div>
             <div class="mb-3 col-lg-12 col-md-8">
-                <label for="name" class="form-label">Customer Name</label>
-                <input type="text" class="form-control" id="name">
+                <label for="custName" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="cust_name">
             </div>
             <div class="mb-3 col-lg-12 col-md-8">
-                <label for="address" class="form-label">Address</label>
-                <input type="text" class="form-control" id="address">
+                <label for="cust_address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="cust_address">
             </div>
             <div class="mb-3 col-lg-12 col-md-4">
                 <label for="salary" class="form-label">Salary</label>
-                <input type="number" class="form-control" id="salary" placeholder="Rs: 000000.00">
+                <input type="number" class="form-control" id="cust_salary" placeholder="Rs: 000000.00">
             </div>
             <div class="buttons">
                 <button type="submit" class="btn btn-success mb-1">Save</button>
@@ -123,8 +117,8 @@
         </form>
     </div>
 
-    <div id="tableDiv">
-        <div class="col col-lg-8" id="table">
+    <div id="cust_tableDiv">
+        <div class="col col-lg-8" id="cust_table">
             <table class="table table-bordered">
                 <thead>
                 <th>Id</th>
@@ -252,36 +246,11 @@
             </table>
         </div>
     </div>
-</section>-->
-<!--<section id="itemSection">
+</section>
+<section id="itemSection">
     <div>
-        <header>
-            <nav id="nav_bar" >
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="">
-                        <img src="/assets/images/mobile-phone-shop-logo.jpg" alt="Logo" class="d-inline-block align-text-top" width="100px" height="80px">
-                        <label id="title">ITEM FORM</label>
-                    </a>
-                    <ul class="nav nav-tabs">
-                        <li id="aaa" class="nav-item">
-                            <a id="dashboard" class="nav-link" href="dashBord.html">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="customer" class="nav-link" href="customerForm.html">Customer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="item" class="nav-link active" href="itemForm.html">Item</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="order" class="nav-link" href="orderForm.html">Order</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
         <div class="div-container" id="searchItem">
-            <img src="../assets/images/search.png">
+            <img src="/assets/images/search.png">
             <input type="text" placeholder="Search by item code..">
         </div>
 
@@ -289,20 +258,20 @@
             <form action="" class="row">
                 <h3>Customer details</h3>
                 <div class="mb-3 col-lg-12 col-md-4">
-                    <label for="id" class="form-label">Item Code :</label>
-                    <input type="text" class="form-control" id="id" placeholder="I001">
+                    <label for="item_code" class="form-label">Item Code :</label>
+                    <input type="text" class="form-control" id="item_code" placeholder="I001">
                 </div>
                 <div class="mb-3 col-lg-12 col-md-8">
-                    <label for="name" class="form-label">Description :</label>
-                    <input type="text" class="form-control" id="name">
+                    <label for="item_des" class="form-label">Description :</label>
+                    <input type="text" class="form-control" id="item_des">
                 </div>
                 <div class="mb-3 col-lg-12 col-md-8">
-                    <label for="address" class="form-label">Unit Price :</label>
-                    <input type="text" class="form-control" id="address" placeholder="Rs: 000000.00">
+                    <label for="item_address" class="form-label">Unit Price :</label>
+                    <input type="text" class="form-control" id="item_address" placeholder="Rs: 000000.00">
                 </div>
                 <div class="mb-3 col-lg-12 col-md-4">
-                    <label for="salary" class="form-label">Qty :</label>
-                    <input type="number" class="form-control" id="salary" placeholder="00">
+                    <label for="item_qty" class="form-label">Qty :</label>
+                    <input type="number" class="form-control" id="item_qty" placeholder="00">
                 </div>
                 <div class="buttons">
                     <button type="submit" class="btn btn-success mb-1">Save</button>
@@ -437,32 +406,8 @@
             </div>
         </div>
     </div>
-</section>-->
+</section>
 <section id="orderSection">
-    <header>
-        <nav id="nav_bar" >
-            <div class="container-fluid">
-                <a class="navbar-brand" href="">
-                    <img src="/assets/images/mobile-phone-shop-logo.jpg" alt="Logo" class="d-inline-block align-text-top" width="100px" height="80px">
-                    <label id="title">PLACE ORDER FORM</label>
-                </a>
-                <ul class="nav nav-tabs">
-                    <li id="aaa" class="nav-item">
-                        <a id="dashboard" class="nav-link" href="dashBord.html">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="customer" class="nav-link" href="customerForm.html">Customer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="item" class="nav-link" href="itemForm.html">Item</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="order" class="nav-link active" href="orderForm.html">Order</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
     <section class="container">
         <div class="row mb-3">
             <div class="col container customer-pane">
@@ -581,5 +526,66 @@
         </div>
     </section>
 </section>
+<script src="assets/jquerry/jquery.min.js"></script>
+<script>
+    const displayNoneSections = () => {
+        $("#loginSection").css("display", "none");
+        $("#dashboardSection").css("display", "none");
+        $("#navBarSection").css("display", "none");
+        $("#customerSection").css("display", "none");
+        $("#itemSection").css("display", "none");
+        $("#orderSection").css("display", "none");
+    }
+    displayNoneSections();
+    $("#loginSection").css("display", "block");
+
+    $("#signInBtn").on('click', () => {
+        displayNoneSections();
+        $("#dashboardSection").css("display", "block");
+    });
+
+    $("#customerBtn").on('click', () => {
+        displayNoneSections();
+        $("#navBarSection").css("display", "block");
+        $("#customerSection").css("display", "block");
+    });
+
+    $("#itemBtn").on('click', () => {
+        displayNoneSections();
+        $("#navBarSection").css("display", "block");
+        $("#itemSection").css("display", "block");
+    });
+
+    $("#orderBtn").on('click', () => {
+        displayNoneSections();
+        $("#navBarSection").css("display", "block");
+        $("#orderSection").css("display", "block");
+    });
+
+    $("#logOutBtn").on('click', () => {
+        displayNoneSections();
+        $("#loginSection").css("display", "block");
+    });
+
+    $("#navDashBord").on('click', () => {
+        displayNoneSections();
+        $("#dashboardSection").css("display", "block");
+    });
+
+    $("#navCustomer").on('click', () => {
+        displayNoneSections();
+        $("#customerSection").css("display", "block");
+    });
+
+    $("#navItem").on('click', () => {
+        displayNoneSections();
+        $("#itemSection").css("display", "block");
+    });
+
+    $("#navOrder").on('click', () => {
+        displayNoneSections();
+        $("#orderSection").css("display", "block");
+    });
+</script>
 </body>
 </html>

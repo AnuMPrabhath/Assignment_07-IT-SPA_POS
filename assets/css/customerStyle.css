@@ -49,7 +49,7 @@ ul {
     height: 40px;
     border-radius: 20px;
 }
-#detailDiv {
+#custDetailDiv {
     position: absolute;
     top: 230px;
     left: 50px;
@@ -58,7 +58,7 @@ ul {
     background-color: white;
     border-radius: 20px;
 }
-#detailDiv > form > div > input {
+#custDetailDiv > form > div > input {
     border: 1px solid black;
     border-radius: 20px;
 }
@@ -68,7 +68,7 @@ h3 {
 table tbody, table thead {
     border: 1px solid black;
 }
-#tableDiv {
+#cust_tableDiv {
     position: absolute;
     top: 130px;
     left: 600px;
@@ -76,7 +76,7 @@ table tbody, table thead {
     border-radius: 20px;
     width: 850px;
 }
-#table {
+#cust_table {
     position: relative;
     top: 30px;
     left: 30px;
